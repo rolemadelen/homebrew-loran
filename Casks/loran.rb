@@ -1,9 +1,9 @@
 cask "loran" do
   arch arm: "aarch64", intel: "intel"
 
-  version "0.6.0"
-  sha256 arm:   "39eb9e39300a3dcbf132d11e9e18289e2e388eabdf4b02c40bb0755fc8a759f7",
-         intel: "fa89981cd49eb00d50d80c557e053a4747887e873e201c19f26883b10dd48359"
+  version "0.6.2"
+  sha256 arm:   "7e3304c68eb5312fe401d8edc9a47bb7e9d01ee5caec8cb8e5a024d743280a3f",
+         intel: "496bbf48f34944669009251147ee7be7665716df525b1e36aa817fbeb9dc3f45"
 
   url "https://pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/loran-macosx-#{arch}-#{version}.dmg",
       verified: "pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/"
