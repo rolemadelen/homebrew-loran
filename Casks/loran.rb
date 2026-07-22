@@ -2,10 +2,10 @@ cask "loran" do
   arch arm: "aarch64", intel: "intel"
 
   version "0.7.0"
-  sha256 arm:   "cc8df51d53bd863702c5ce5bd486f82270090a8dcfea359fc7473cda11548b98",
-         intel: "04a0a7675f5ba8704b8ea0b609c0d192d5cd8c6d926777d15d851cf285795b85"
+  sha256 arm:   "897c107c5ad57e2a138fef5acca87505339f3f81fc3ae4bdb95be6e0a5e370b6",
+         intel: "395a38d32e7a3674a34cc82348045670998427bc5456a7c3d71a9a28a800fe7b"
 
-  url "https://pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/loran-macosx-#{arch}-#{version}.dmg",
+  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.7.0/loran-macosx-#{arch}-#{version}.dmg",
       verified: "pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/"
   name "Loran"
   desc "Markdown note-taking app"
