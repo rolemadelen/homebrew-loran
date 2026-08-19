@@ -1,16 +1,17 @@
-cask "loran" do
+cask "loran@0.7.20" do
   arch arm: "aarch64", intel: "intel"
 
   version "0.7.20"
   sha256 arm:   "0b4538b97a4d97e7e49e618b3a23d1e081719a7cea85d38a08b58c157acaa7f4",
          intel: "22cc0e7d042e328651ce2368f386c47444d42546162f32b16ae0c5488ec158bb"
 
-  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.7.0/loran-macosx-#{arch}-#{version}.dmg",
-      verified: "pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/"
+  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.7.20/loran-macosx-#{arch}-#{version}.dmg"
   name "Loran"
   desc "Markdown note-taking app"
   homepage "https://loran.day/"
 
+  # Same app name/bundle as the main cask — only one can be installed at a time
+  conflicts_with cask: "loran"
   depends_on :macos
 
   app "loran.app"
