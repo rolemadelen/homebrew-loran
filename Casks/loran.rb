@@ -5,7 +5,7 @@ cask "loran" do
   sha256 arm:   "b272ae39e59478687e077f96dfa32f69051d201f12b55ce043f86afa5745de79",
          intel: "85446b6870867cdff73452fc1d3c168603ad3b599dd2637766db37c2a14cced1"
 
-  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.7.0/loran-macosx-#{arch}-#{version}.dmg",
+  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v#{version}/loran-macosx-#{arch}-#{version}.dmg",
       verified: "pub-8cba8c3991e24de0bb09ab4fc11e167b.r2.dev/loran/"
   name "Loran"
   desc "Markdown note-taking app"
