@@ -16,13 +16,15 @@ cask "loran@0.7.35" do
 
   app "loran.app"
 
-  postflight do
-    # Loran isn't Apple-notarized yet, so the quarantine flag set on
-    # download would otherwise trigger Gatekeeper's "Apple could not
-    # verify..." dialog on first launch. Stripping it here means brew
-    # install is the only step a user needs - no right-click-Open dance.
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "com.apple.quarantine", "#{appdir}/loran.app"],
-                   sudo: false
+  # Loran isn't Apple-notarized yet, so the quarantine flag set on
+  # download would otherwise trigger Gatekeeper's "Apple could not
+  # verify..." dialog on first launch. Stripping it here means brew
+  # install is the only step a user needs - no right-click-Open dance.
+  # A missing flag isn't an error.
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "{{appdir}}/loran.app"],
+        must_succeed: false,
+        print_stderr: false
   end
 end
