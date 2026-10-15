@@ -2,8 +2,8 @@ cask "loran" do
   arch arm: "aarch64", intel: "intel"
 
   version "0.8.26"
-  sha256 arm:   "e50d021430ca379a1e417e3bc067d9a829e092868c29c497dc147ff6371422db",
-         intel: "9e03153d218119b7ea3a06ba36538d5e0a9152be61981995a24d853645fcc547"
+  sha256 arm:   "605a60f19e6a2ed0bb0af8eff23ab481ed27e379aef4ab9a29200eb8d56c2fab",
+         intel: "b26d28f11b20125204e14b5bd2ed67a720a73815a67cfd28756f4f19bf0ee7cb"
 
   url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v#{version}/loran-macosx-#{arch}-#{version}.dmg"
   name "Loran"
