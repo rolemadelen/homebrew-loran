@@ -1,11 +1,11 @@
-cask "loran@0.9.2" do
+cask "loran@0.9.10" do
   arch arm: "aarch64", intel: "intel"
 
-  version "0.9.2"
-  sha256 arm:   "a38dfe38b7ee2eb6864476c491bbf2aca18d64156f4983bc7e2d7ad35f6722d1",
-         intel: "336ced336dc3222b0beb2a1f22ebdbb317ad46f85c7024c3f219ce56af5ae418"
+  version "0.9.10"
+  sha256 arm:   "10ba17625049222da09c3c9be0d528651ecbdf47b9e2a4a176a840435ddb79b1",
+         intel: "9e9553452bb22302830f6820853d01b623805b7a64c3201479d28642067b823d"
 
-  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.9.2/loran-macosx-#{arch}-#{version}.dmg"
+  url "https://gitlab.com/jiiyoo17/loran-releases/-/raw/main/releases/v0.9.10/loran-macosx-#{arch}-#{version}.dmg"
   name "Loran"
   desc "Markdown note-taking app"
   homepage "https://loran.day/"
